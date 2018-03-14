@@ -67,10 +67,7 @@ public class Triangle {
 		
 		return true;
 	}
-//	final int TR_EQUILATERAL = 1; // равносторонний
-//	final int TR_ISOSCELES = 2;   // равнобедренный
-//	final int TR_ORDYNARY = 4;    // обычный
-//	final int TR_RECTANGULAR = 8; // прямоугольный
+
 	public int detectTriangle()
 	{
 		int final_state = 0;
