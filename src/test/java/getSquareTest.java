@@ -53,13 +53,13 @@ public class getSquareTest {
                 };
     }
     @Test(dataProvider = "NormalInputProvider")
-    public void testCheckTriangle(Double a, Double b, Double c, Double Square) {
+    public void testSquareAllNurmalTriangles(Double a, Double b, Double c, Double Square) {
 
         Triangle tr = new Triangle(a,b,c);
         Assert.assertEquals(tr.getSquare(),Square);
     }
     @Test(expectedExceptions= ArithmeticException.class, dataProvider = "WrongDataProvider")
-    public void testBigTriangle(Double a, Double b, Double c) {
+    public void testSquareWrongTriangle(Double a, Double b, Double c) {
         Triangle tr = new Triangle(a,b,c);
         tr.getSquare();
     }
